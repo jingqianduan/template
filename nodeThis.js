@@ -3,6 +3,7 @@ var fs = require('fs')
 var path = require('path')
 
 
+
 var server = http.createServer(function(request, response) {
     var url = request.url
     if (url === '/') {
@@ -32,6 +33,8 @@ var server = http.createServer(function(request, response) {
         })
     }
 })
+
+
 server.listen(2000,function(){
     console.log("localServer Ready http://127.0.0.1:2000")
          
